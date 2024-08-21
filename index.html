@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Keeping Blumenau Clean</title>
+  <link rel="icon" href="/Icons/trash-can-solid.svg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="navbar" id="Home">
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#Impact">Impact</a></li>
+      <li><a href="#Midia">Midia</a></li>
+      <li><a href="#News">News</a></li>
+      <li><Button style="margin-top: -5%;" id="theme-button" class="general-button">Dark Mode</Button></li>
+      <li><Button style="margin-top: -5%;" id="motion-button" class="general-button">Reduce Motion</Button></li>
+    </ul>
+  </div>
+
+
+  
+  <div class="header-container">
+    <div class="header-item">
+      <img src="/Icons/trash-can-solid.svg" width="300" height="200">
+    </div>
+    <div class="header-item">
+      <h1>Keeping Blumenau Clean</h1>
+      <h3>The city is our shared home</h3>
+      <div class="centered">
+        <button class="header-button">Waste guide</button>
+        <button class="header-button">Share your story</button>
+      </div>
+    </div>
+  </div>  
+  
+  <h2 id="Impact">Why should we keep the streets clean?</h2>
+
+  <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+  <p>Keeping our streets clean not only enhances the beauty and safety of our neighborhoods but also promotes a healthier environment by reducing pollution and encouraging community pride. Cleaner streets contribute to better public health, support local wildlife, and foster a more positive and inviting atmosphere for everyone.</p>
+  </div>
+
+
+  <div style="text-align: center;" id="Midia" class="revealable">
+    <iframe style="text-align: center;" width="560" height="315" src="https://www.youtube.com/embed/Wc4IQoZImpA?si=e4ABlbC76YO0_uXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  
+  <h3 class="revealable" style="font-family: Arial, sans-serif; color: #333; text-align: center;">Litter can cause street flooding</h3>
+
+   <div class="flex-img-container revealable">
+    <div class="flex-img-item">
+      <img src="https://s2-g1.glbimg.com/ZbFUA5t4EW_CFPRHM17dYSsankY=/0x0:944x531/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/S/K/1Wx0MySHGfAUnIoFTfSQ/enchente-blumenau-foto-patrick-rodrigues-944x531.jpg" width="300" height="200">
+    </div>
+     <div class="flex-img-item">
+      <img src="https://omunicipioblumenau.com.br/wp-content/uploads/2023/10/whatsapp-image-2023-10-09-at-11.36.58-4.jpeg" width="300" height="200">
+      </div>
+   </div>
+
+  <div class="petition revealable" id="petition">
+
+    <div class="generic-container">
+      <h2>Sign Our Petition 📢</h2>
+    </div>
+    <p id="counter" style="text-align: center;"></p>
+
+    
+      <div class="petition-container">
+
+          <div class="petition-para">
+            <p style="text-align: left;">Help Us Clean Our Streets! Litter and pollution mar our communities and harm our health. By signing this petition, you support stronger waste management and cleaner neighborhoods. Your voice matters—join us in making a positive impact today!</p>
+          </div>
+
+          <div class="signatures" id="signatures">
+            <p style="text-align: left;">🖊️ DJ from Brooklyn supports this.</p>
+            <p style="text-align: left;">🖊️ Amy from Queens supports this.</p>
+            <p style="text-align: left;">🖊️ Teresa from Harlem supports this.</p>
+          </div>
+
+      </div>
+
+    <div class="generic-container">
+      <div class="generic-item">
+        <form id="sign-petition" title="sign-petition">
+          <label>Name</label>
+          <input id="name" type="text" required>
+          <label>City area</label>
+          <input id="area" type="text" required/>
+          <label>Email</label>
+          <input id="email" type="email" required/>
+        </form>     
+      </div>
+      
+      <div class="generic-item">
+        <button class="general-button" id="sign-now-button">Sign Now</button>
+      </div>
+    </div>
+
+  </div>
+  
+  <h3 style="margin-top: 30px; color: #333">Recent News</h2>
+
+  <div class="header-news" id="News">
+    <a href="https://omunicipioblumenau.com.br/">Blumenau</a>
+    <a href="https://www.google.com/">Google</a>
+  </div>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content">Placeholder text</p>
+        <img id="modal-image" src="/Icons/trash-can-solid.svg" width="300" height="200">
+        <button id="close-modal">Close</button>
+      </div>
+      <!-- image here-->
+    </div>
+
+  </div>
+  
+  <!-- <div class="footer">
+    <a href="https://omunicipioblumenau.com.br/">Footer 1</a>
+    <a href="https://omunicipioblumenau.com.br/">Footer 2</a>
+  </div> -->
+
+  <script src="index.js"></script>
+</body>
+</html>

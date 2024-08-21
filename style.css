@@ -1,0 +1,313 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+
+    /* Add a background color or image */
+    background-color: #E3FCEC;
+
+    /* Customize the font, size, and color for text*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #2E4632;
+
+    /* Adjust the padding and margins */
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+}
+
+.navbar{
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #3E7C55;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* General style rule set for all items in ul */
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;  
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  font-family: 'Poppins', sans-serif;
+  color: #4CAF50;
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+    font-weight: bold;
+    color: #66BB6A;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 300%;
+  color: #333; 
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #444; 
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+a:link {
+  color: #4CAF50;
+}
+
+a:visited {
+  color: #388E3C;
+}
+
+a:hover {
+  color: #66BB6A;
+}
+
+a:active {
+  color: #2E7D32;
+}
+
+.centered { 
+  text-align: center;
+}
+
+.header-container { 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.header-item {
+    text-align: center;
+    margin: 0 auto;
+    align-content: center;  
+}
+
+.header-item:nth-of-type(1) {
+  justify-content: center;
+}
+
+.header-item:nth-of-type(2) {
+  color: #4F9D5D;
+}
+
+.generic-container { 
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.generic-item {
+    text-align: center;
+    align-content: center;  
+}
+
+.header-button { 
+  background-color: #88C970;
+  color: white;
+  border-color: #4F9D5D;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  padding: 2% 4%;
+  margin: 1% 1%;
+  border-style: double;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.general-button{ 
+  background-color: #88C970;
+  color: white;
+  border-color: #4F9D5D;
+  font-family: 'Poppins', sans-serif;
+  padding: 1% 1%;
+  border-style: double;
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 12px; 
+  text-align: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.header-news {
+  margin: 0 auto;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+/* .footer {
+  text-align: right;
+  left: 0;
+  bottom: 0;
+  height: 4%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+} */
+
+.flex-img-container{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.flex-img-item {
+  text-align: center;
+  align-items: stretch;
+  border-color: darkgreen;
+  border-style: double;
+  border-width: 2px;
+  border-radius: 10px;
+  display: inline-block; 
+  padding: 10px;
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: #111;
+}
+
+.petition-container{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+}
+
+.petition-para{
+  max-width: 50%; 
+  text-align: right;
+}
+
+.signatures{
+  max-width: 50%; 
+  text-align: left
+}
+
+#sign-now-button{
+  text-align: center;
+  justify-content: center;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.revealable{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
